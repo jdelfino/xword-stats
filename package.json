@@ -3,16 +3,15 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@material-ui/core": "^4.10.1",
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.5.0",
     "@testing-library/user-event": "^7.2.1",
     "axios": "^0.19.2",
-    "canvasjs": "^1.8.3",
     "dexie": "^3.0.1",
     "format-duration": "^1.3.1",
     "lodash": "^4.17.15",
     "moment": "^2.26.0",
-    "moving-averages": "^4.0.5",
     "plotly.js": "^1.54.1",
     "react": "^16.13.1",
     "react-compound-slider": "^2.5.0",
@@ -20,10 +19,8 @@
     "react-plotly.js": "^2.4.0",
     "react-scripts": "3.4.1",
     "react-tabs": "^3.1.1",
-    "recharts": "^1.8.5",
     "tsutils": "^3.17.1",
-    "typescript": "^3.9.5",
-    "victory": "^34.3.9"
+    "typescript": "^3.9.5"
   },
   "scripts": {
     "start": "react-scripts --max_old_space_size=8196 start",

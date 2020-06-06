@@ -92,7 +92,7 @@ function TimeTable() {
     console.log("useEffect newData")
     async function populate() {
       // TODO: push sort down?
-      let times = await Scraper.getAllTimes(cookie, moment.duration(1, 'month'));
+      let times = await Scraper.getAllTimes(cookie, moment.duration(2, 'years'));
       times.sort(comparePuzz);
       setTimes(times);
       setNewData(false);
@@ -107,7 +107,7 @@ function TimeTable() {
 
   async function handleFetch(e) {
     setFetching(true);
-    await Scraper.fetchAllTimes(cookie, moment.duration(1, 'month'));
+    await Scraper.fetchAllTimes(cookie, moment.duration(2, 'years'));
     setFetching(false);
     setNewData(true);
   };
