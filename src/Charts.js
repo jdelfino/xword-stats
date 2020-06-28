@@ -1,15 +1,8 @@
 import React from 'react';
-import { Slider } from '@material-ui/core';
 import moment from 'moment';
 import Plot from 'react-plotly.js';
 
 function Charts(props) {
-  const [dailySlider, setDailySlider] = React.useState([1,2]);
-
-  const handleSlider = (event, newValue) => {
-    setDailySlider(newValue);
-  };
-
   function days_of_week() {
     return ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"];
   }
