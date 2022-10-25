@@ -14,11 +14,11 @@ class Scrapetastic {
     }
 
     listUrl(start, end, puzz_type) {
-        return `https://cors-anywhere.herokuapp.com/https://nyt-games-prd.appspot.com/svc/crosswords/v3/77678625/puzzles.json?publish_type=${puzz_type}&sort_order=asc&sort_by=print_date&date_start=${start.format('YYYY-MM-DD')}&date_end=${end.format('YYYY-MM-DD')}`
+        return `https://master.d11mdk68f3uft3.amplifyapp.com/https://nyt-games-prd.appspot.com/svc/crosswords/v3/77678625/puzzles.json?publish_type=${puzz_type}&sort_order=asc&sort_by=print_date&date_start=${start.format('YYYY-MM-DD')}&date_end=${end.format('YYYY-MM-DD')}`
     }
 
     puzUrl(num) {
-        return `https://cors-anywhere.herokuapp.com/https://nyt-games-prd.appspot.com/svc/crosswords/v6/game/${num}.json`
+        return `https://master.d11mdk68f3uft3.amplifyapp.com/https://nyt-games-prd.appspot.com/svc/crosswords/v6/game/${num}.json`
     }
 
 
