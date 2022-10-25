@@ -53,7 +53,7 @@ async fetchAllTimes(cookie, duration) {
 
 async fetchData(url, cookie) {
     console.log(`fetching ${url}`)
-    const result = await axios.get(url, { crossDomain: true, headers: { "nyt-s": cookie } } );
+    const result = await axios.get(url, { crossDomain: true, headers: { "nyt-s": cookie, "origin": "master.d2r092v4u0dekz.amplifyapp.com" } } );
     return result.data
 };
 
